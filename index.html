@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" 
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3
+        ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header id="header">
+        <img src="https://dummyimage.com/1000x1000/701ed4/fff.png&text=logo" alt="Logo" id="header-img">
+        <span id="hamburger-span">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+        </span>
+        <nav class="nav-bar hidden-xs" id="nav-bar">
+            <a class="nav-link btn btn-sm btn-primary" href="#advantages">Advantages</a>
+            <a class="nav-link btn btn-sm btn-primary" href="#video">Video</a>
+            <a class="nav-link btn btn-sm btn-primary" href="#pricing">Pricing</a>
+            <a class="nav-link btn btn-sm btn-primary" href="#subscribe" id="sub-nav">Subscribe</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <h1 class="title" id="main-title">Landing page</h1>
+            <p class="subtitle" id="main-sub">Nullam laoreet placerat finibus. Nulla faucibus auctor est, vitae auctor dui lobortis a. Pellentesque molestie elit sit amet mauris iaculis maximus.</p>
+            <div class="banner-buttons">
+                <a class="btn btn-primary btn-block d-sm-none banner-button" id="order-xs" href="#pricing">Order Now</a>
+                <a class="btn btn-primary d-none d-sm-block banner-button" id="order-sm" href="#pricing">Order Now</a>
+                <button class="btn btn-dark btn-block d-sm-none banner-button" id="subscribe-xs">Subscribe</button>
+                <button class="btn btn-dark d-none d-sm-block banner-button" id="subscribe-sm">Subscribe</button>
+            </div>
+        </div>
+        <div class="row" id="advantages">
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-1">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 1</h3>
+                <p class="adv-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium iaculis tortor ut congue.</p>
+            </article>
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-2">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 2</h3>
+                <p class="adv-text">Sed quis placerat elit. Aenean ligula purus, accumsan ut lobortis ac, bibendum a orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </article>
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-3">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 3</h3>
+                <p class="adv-text">Nullam venenatis id dolor quis imperdiet. Nulla varius tincidunt varius. Vivamus a erat sed justo porttitor aliquet sed nec dui.</p>
+            </article>
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-4">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 4</h3>
+                <p class="adv-text">Nullam laoreet placerat finibus. Nulla faucibus auctor est, vitae auctor dui lobortis a. Pellentesque molestie elit sit amet mauris iaculis maximus.</p>
+            </article>
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-5">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 5</h3>
+                <p class="adv-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas suscipit quam quis felis ultricies, ac blandit justo molestie.</p>
+            </article>
+            <article class="adv col-xs-12 col-sm-6 col-md-6 col-lg-4" id="adv-6">
+                <img src="https://dummyimage.com/1000x1000/285A88/fff.png&text=Advantage" alt="" class="adv-image">
+                <h3 class="adv-title">Advantage 6</h3>
+                <p class="adv-text">Pellentesque diam diam, efficitur in urna quis, sagittis luctus libero. In id nulla nec nibh mattis dictum.</p>
+            </article>
+        </div>
+        <div class="video">
+            <p class="text-center">
+                <iframe 
+                    src="https://www.youtube-nocookie.com/embed/pVE92TNDwUk?rel=0&showinfo=0&disablekb=1" 
+                    frameborder="0" allow="fullscreen" id="video">
+                </iframe>
+            </p>
+        </div>
+        <div id="pricing">
+            <article class="price-option" id="option-1">
+                <header class="price-option-header" id="main-header"><h5 class="price-option-title">Main</h5></header>
+                <div class="price-option-subheader" id="main-subheader"><h5 class="price-option-subtitle">What you will get</h5></div>
+                <ul class="perks">
+                    <li class="perk">
+                        Lorem ipsum
+                    </li>
+                    <li class="perk">
+                        Taciti sociosqu ad litora
+                    </li>
+                    <li class="perk">
+                        Faucibus auctor est
+                    </li>
+                    <li class="perk">
+                        Dolor quis
+                    </li>
+                    <li class="perk">
+                        Vivamus a erat sed
+                    </li>
+                </ul>
+                <div class="text-center price-option-button-div">
+                    <button class="btn btn-primary btn-block price-option-button" id="price-option-button-1">
+                        <span class="dollar-sign">$</span><span class="price">99</span><span class="term">/year</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+        <div class="form-div" id="subscribe">
+            <h4 class="text-center">Subscribe to our newsletter</h4>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input name ="email" type="email" id="email" class="form-control d-block" placeholder="Enter your email" required>
+                <input type="submit" id="submit" class="btn btn-primary btn-block d-sm-none">
+                <input type="submit" id="submit-sm" class="btn btn-primary d-none d-sm-block">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/674c647516.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </footer>
+</body>
+</html>

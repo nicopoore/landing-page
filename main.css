@@ -1,0 +1,294 @@
+/* General */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body:before {
+    content:"";
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #1C2023;
+    background: -webkit-linear-gradient(18deg, #1C2023 50%, #31373f 100%);
+    background: -o-linear-gradient(18deg, #1C2023 50%, #31373f 100%);
+    background: linear-gradient(18deg, #1C2023 50%, #31373f 100%);
+}
+
+body {
+    color: #eee;
+}
+
+
+
+/* Header */
+
+#header {
+    background-color: #121618;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header-img {
+    transition: height .1s;
+}
+
+.nav-link {
+    border-radius: 0px;
+}
+
+.nav-bar {
+    margin: auto;
+}
+
+
+/* Main */
+
+.main > * {
+    width: 80%;
+    margin: auto
+}
+
+
+/* Banner */
+
+.banner-button {
+    margin: .5rem auto;
+}
+
+#order-xs,
+#subscribe-xs {
+    height: 2.8rem;
+}
+
+.banner p {
+    color: #ddd;
+}
+
+
+/* Advantages */
+
+#advantages {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.adv {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.adv-image {
+    height: 5rem;
+    margin: 1rem;
+}
+
+.adv-text {
+    color: #ddd;
+}
+
+
+/* Pricing */
+
+#pricing {
+    color: #ccc;
+    width: 350px;
+}
+
+.price-option {
+    border-radius: 10px;
+    background-color: #31373f;
+}
+
+.price-option-header {
+    color: #eee;
+    width: 90%;
+    height: 5rem;
+    margin: auto;
+    border-bottom: 1px solid #777;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.price-option-subheader {
+    width: 90%;
+    height: 4rem;
+    margin: auto;
+    border-bottom: 1px solid #777;
+}
+
+.price-option-title {
+    line-height: 5rem;
+    font-size: 1.8rem;
+}
+
+.price-option-subtitle {
+    line-height: 4rem;
+}
+
+.perks {
+    margin: 0 5% 1rem 5%;
+    list-style-type: none;
+}
+
+.perk {
+    padding: 1rem 0;
+    border-bottom: 1px solid #777;
+}
+
+#price-option-button-1 {
+    width: 90%;
+    margin: auto;
+}
+
+.price-option-button-div {
+    margin: 1.5rem 0 5% 0;
+    padding-bottom: 5%;
+}
+
+#price-option-button-1 * {
+    font-weight: 500;
+}
+
+.dollar-sign {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.term {
+    color: #eee;
+}
+
+
+/* Form */
+
+#form > * {
+    margin: 1rem auto;
+}
+
+#subscribe {
+    margin: 2.5rem auto;
+}
+
+
+@media only screen and (min-width: 575px) {
+    #header-img {
+        height: 4rem;
+        padding: .3rem;
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 1em;
+        right: .8em;
+    }
+
+    .nav-link {
+        display: inline;
+        border-radius: 3px;
+    }
+
+    .hidden-xs {
+        display: inline;
+    }
+    
+    .banner {
+        text-align: left;
+        margin: 23rem 20%;
+        width: 30rem;
+    }
+
+    .banner > * {
+        margin: 1rem .5rem;
+    }
+
+    .banner h1 {
+        font-size: 4em;
+    }
+
+    .banner p {
+        font-size: 1.3em;
+    }
+
+    .banner-buttons > * {
+        float: left;
+        margin-right: .5rem;
+    }    
+
+    .adv {
+        width: 30%;
+        padding: 0 3rem;
+    }
+
+    .video {
+        margin: 10rem auto 13rem;
+    }
+
+    iframe {
+        width: 40vw;
+        height: 22.5vw;
+    }
+
+    #pricing,
+    #subscribe {
+        margin-bottom: 6rem;
+    }
+
+    #email {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #header-img {
+        height: 3rem;
+        padding: .3rem;
+    }
+
+    #hamburger-icon {
+        position: absolute;
+        font-size: 1.5rem;
+        top: .5em;
+        right: .8em;
+        color: #666;
+    }
+
+    .nav-link {
+        display: block;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+    
+    .banner {
+        text-align: center;
+        margin: 9rem auto 5rem;
+    }
+
+    .banner > * {
+        margin: 1.5rem 0;
+    }
+
+    .video {
+        margin: 0 auto 5rem;
+    }
+}
